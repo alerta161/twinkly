@@ -9,26 +9,47 @@ color: #FFFFFF;
 text-align: centre;
 
 }
-.nav_main{
-display: flex;
-align-items:centre;
-}
-.nav{
-padding: 10px, 15px;
-font-size: 20px;
-margin-left: 60px;
-}
-#nav1{
-margin-left: 500px;
-display: flex;
-}
 .fraza{
-display: flex;
- font-family: 'Bebas Neue';
-    font-size: 60px;
-    line-height: 70px;
-    height: 60px;
-    letter-spacing: 5.70937px;
-    margin-top: 317px;
+margin-left: 300px;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 6em;
+    font-size: 100px;
+    text-transform: uppercase;
+
+}
+.logo{
+background-color: #333333;
+width: 180px;
+height:1000px;
+margin-right:0;
+position: absolute;
+}
+.topnav {
+  overflow: hidden;
+  background-color: ;
 }
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 200px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+ }
+
+.knopka{
+margin-left: 300px;
+font-size: 40px;
+}

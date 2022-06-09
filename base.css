@@ -201,6 +201,7 @@ text-align: centre;
 }
 
 .box_text{
+        margin-top: 10px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
@@ -213,4 +214,39 @@ text-align: centre;
         letter-spacing: 0.1875px;
 
         color: #fff;
+}
+
+
+.boxs2{
+    margin-top: 80px;
+    margin-bottom: 0;
+    margin-left: 120px;
+    width: 425px;
+    height: 201px;
+    display: inline-table;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.box_text2{
+        margin-top: 40px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        /* or 177% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1875px;
+
+        color: #fff;
+}
+
+.boxs3{
+    width:200px;
+    height:200px;
+    margin: 92px 10px 10px 110px;
+
 }

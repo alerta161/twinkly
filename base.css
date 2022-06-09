@@ -166,7 +166,7 @@ text-align: centre;
 .boxs{
     margin-top: 80px;
     margin-bottom: 0;
-    margin-left: 120px;
+    margin-left: 200px;
     width: 425px;
     height: 201px;
     display: inline-table;
@@ -220,7 +220,7 @@ text-align: centre;
 .boxs2{
     margin-top: 80px;
     margin-bottom: 0;
-    margin-left: 120px;
+    margin-left: 200px;
     width: 425px;
     height: 201px;
     display: inline-table;
@@ -247,6 +247,6 @@ text-align: centre;
 .boxs3{
     width:200px;
     height:200px;
-    margin: 92px 10px 10px 110px;
+    margin: 92px 10px 10px 225px;
 
 }

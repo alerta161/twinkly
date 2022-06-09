@@ -8,17 +8,19 @@ a{
     color: white;
 }
 .lampa{
-background: url("images/lampa.png");
+background: url("images/lampa2.jpg");
 height: 1000px;
 background-size: cover;
 color: #FFFFFF;
 text-align: centre;
+display: flex;
 
 }
 .fraza{
+margin-top: 200px;
+    margin-bottom: 150px;
     margin-left: 300px;
     margin-right: auto;
-    margin-top: 200px;
     width: 6em;
     font-size: 100px;
     text-transform: uppercase;
@@ -27,7 +29,7 @@ text-align: centre;
 .logo{
     background-color: #333333;
     width: 180px;
-    height:1000px;
+    height:1050px;
     margin-right:0;
     position: absolute;
     top: 0;
@@ -62,6 +64,8 @@ text-align: centre;
  }
 .knopka{
     margin-left: 300px;
+
+
 }
 .text_knopka{
     font-style: normal;
@@ -248,5 +252,4 @@ text-align: centre;
     width:200px;
     height:200px;
     margin: 92px 10px 10px 225px;
-
 }

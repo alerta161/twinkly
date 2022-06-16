@@ -1,6 +1,8 @@
+{% load static %}
 .body{
     text-decoration: none;
     background-color: #333333;
+    height:1000px;
 }
 
 a{
@@ -8,7 +10,7 @@ a{
     color: white;
 }
 .lampa{
-background: url("images/block_1/lampa2.jpg");
+background: url("{%static 'images/block_1/lampa2.jpg'%}");
 height: 1000px;
 background-size: cover;
 color: #FFFFFF;
@@ -272,7 +274,7 @@ height: 75px;
 }
 
 .uslugi{
-    background: url("images//block_3/lampochka.jpg");
+    background: url("{%static 'images//block_3/lampochka.jpg'%}");
     background-size: cover;
     margin-top: 20px;
 }
@@ -479,6 +481,8 @@ margin-bottom:60px;}
     left:0;
     opacity:0;
     visibility: hidden;
+    transition: all 0.8s ease 0s;
+    max-height: 100vh;
 }
 .popup:target{
     opacity:1;
@@ -486,7 +490,7 @@ margin-bottom:60px;}
 }
 .popup_area {
     position:absolute;
-    width:100%
+    width:100%;
     height:100%;
     top: 0;
     left:0;
@@ -523,6 +527,7 @@ margin-bottom:60px;}
 }
 .popup_text {
     color: #fff;
+    font-family: cursive;
 }
 
 .saniden{
@@ -533,3 +538,7 @@ color: #fff;
 .saniden:hover{
 color:#D1A954;
 }
+.popup_text1{
+color: #fff;
+font-weight: 700;}
+

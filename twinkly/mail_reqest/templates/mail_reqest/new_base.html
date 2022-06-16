@@ -1,13 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <link href="base.css" rel="stylesheet">
+    <link href="{%static 'css/base.css'%}" rel="stylesheet">
+    <link href="{%static 'images'%}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body class="body">
+<body id="no-scroll" class="body">
 <div class="conteiner">
     <div class="topnav">
         <a class="active" href="#home">GŁÓWNA</a>
@@ -19,7 +21,7 @@
         <a href="#kontakt">KONTAKT</a>
     </div>
     <div class="logo" id="home">
-        <div><img src="images/block_1/22222.png"></div>
+        <div><img src="{%static 'images/block_1/22222.png'%}"></div>
     </div>
     <div class="lampa">
         <div class="v1_9">
@@ -60,14 +62,14 @@
         <div class="line"></div>
         <aside>
             <div class="boxs">
-                <img class="img_box" src="images/block_2/el.png">
+                <img class="img_box" src="{%static 'images/block_2/el.png'%}">
                 <div class="box_for_text">
                     <h6 class="box_headline">Doświadczeni elektrycy</h6>
                     <p class="box_text">Zatrudniamy pięciu elektryków z ponad 5-letnim doświadczeniem.</p>
                 </div>
             </div>
             <div class="boxs">
-                <img class="img_box" src="images/block_2/order.png">
+                <img class="img_box" src="{%static 'images/block_2/order.png'%}">
                 <div class="box_for_text">
                     <h6 class="box_headline">Łatwe zamawianie</h6>
                     <p class="box_text">Usługę elektryka można zamówić w domu, korzystając z numerów telefonów i
@@ -77,14 +79,14 @@
                 </div>
             </div>
             <div class="boxs">
-                <img class="img_box" src="images/block_2/price.png">
+                <img class="img_box" src="{%static 'images/block_2/price.png'%}">
                 <div class="box_for_text">
                     <h6 class="box_headline">Elastyczne ceny</h6>
                     <p class="box_text">zawsze chętnie wysłuchuje życzeń klienta</p>
                 </div>
             </div>
             <div class="boxs">
-                <img class="img_box" src="images/block_2/tools.png">
+                <img class="img_box" src="{%static 'images/block_2/tools.png'%}">
                 <div class="box_for_text">
                     <h6 class="box_headline">Profesjonalne narzędzie</h6>
                     <p class="box_text">Używamy profesjonalnego sprzętu i narzędzi, takich jak Bosch, Makita i Hilti.
@@ -94,7 +96,7 @@
                 </div>
             </div>
             <div class="boxs">
-                <img class="img_box" src="images/block_2/monitor.png">
+                <img class="img_box" src="{%static 'images/block_2/monitor.png'%}">
                 <div class="box_for_text">
                     <h6 class="box_headline">monitorowanie online</h6>
                     <p class="box_text">Z nami sprawdzisz online każdy krok instalacji</p>
@@ -110,37 +112,37 @@
         <div class="line"></div>
         <aside class="uslugi">
             <div class="boxs2">
-                <img class="img_box" src="images/block_3/elekt.png">
+                <img class="img_box" src="{%static 'images/block_3/elekt.png'%}">
                 <div class="box_for_text">
                     <p class="box_text2">instalacja elektryczna.</p>
                 </div>
             </div>
             <div class="boxs2_1">
-                <img class="img_box" src="images/block_3/ethernet.png">
+                <img class="img_box" src="{%static 'images/block_3/ethernet.png'%}">
                 <div class="box_for_text">
                     <p class="box_text2">systemy niskoprądowe.</p>
                 </div>
             </div>
             <div class="boxs2">
-                <img class="img_box" src="images/block_3/kabel.png">
+                <img class="img_box" src="{%static 'images/block_3/kabel.png'%}">
                 <div class="box_for_text">
                     <p class="box_text2">układanie tras i koryt kablowych</p>
                 </div>
             </div>
             <div class="boxs2_1">
-                <img class="img_box" src="images/block_3/light.png">
+                <img class="img_box" src="{%static 'images/block_3/light.png'%}">
                 <div class="box_for_text">
                     <p class="box_text2">oświetlenie różnych typów</p>
                 </div>
             </div>
             <div class="boxs2">
-                <img class="img_box" src="images/block_3/repair.png">
+                <img class="img_box" src="{%static 'images/block_3/repair.png'%}">
                 <div class="box_for_text">
                     <p class="box_text2">wymiana starych instalacji elektrycznych na nowe</p>
                 </div>
             </div>
             <div class="boxs2_1">
-                <img class="img_box" src="images/block_3/protect.png">
+                <img class="img_box" src="{%static 'images/block_3/protect.png'%}">
                 <div class="box_for_text">
                     <p class="box_text2">systemy przeciwpożarowe</p>
                 </div>
@@ -154,9 +156,9 @@
         </h2>
         <div class="line"></div>
         <div class="boxs3">
-            <img class="img_box3" src="images/block_4/eltech.png">
-            <img class="img_box3" src="images/block_4/aper.png">
-            <img class="img_box3" src="images/block_4/eltron.png">
+            <img class="img_box3" src="{%static 'images/block_4/eltech.png'%}">
+            <img class="img_box3" src="{%static 'images/block_4/aper.png'%}">
+            <img class="img_box3" src="{%static 'images/block_4/eltron.png'%}">
         </div>
         <div class="line2" id="kontakt"></div>
         <div></div>
@@ -165,7 +167,7 @@
         </h2>
         <div class="line"></div>
         <div class="box_4">
-            <img src="images/1 1011102.png">
+            <img src="{%static 'images/1 1011102.png'%}">
             <div class="reg_form">
                 <input class="v1_90" placeholder="*Imię">
                 <input class="v1_93" placeholder="*Nazwisko">
@@ -209,27 +211,45 @@
 </div>
 <a href="#popup2" class="saniden">SaniDen</a>
 <div id="popup" class="popup">
-        <a href="#topnav" class="popup_area"></a>
-        <div class="popup_body">
-            <div class="popup_content">
-                <a href="#topnav" class="popup_close">X</a>
-                <div class="popup_title">Контакты</div>
-                <div class="popup_text"> +(48)722 768 569</div>
-                <div class="popup_text"> +(48)883 963 745</div>
-                <div class="popup_text"> pankraatoov@gmail.com</div>
-            </div>
+    <a href="#topnav" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#topnav" class="popup_close">X</a>
+            <div class="popup_title">Kontakty</div>
+            <div class="popup_text"> +(48)722 768 569</div>
+            <div class="popup_text"> +(48)883 963 745</div>
+            <div class="popup_text"> pankraatoov@gmail.com</div>
         </div>
+    </div>
 </div>
 <div id="popup2" class="popup">
-        <a href="#topnav" class="popup_area"></a>
-        <div class="popup_body">
-            <div class="popup_content">
-                <a href="#topnav" class="popup_close">X</a>
-                <div class="popup_title">CHCESZ STRONY INTERNOTOWY</div>
-                 <div class="popup_text">NAPISZ saniden@gamil.com</div>
+    <a href="#topnav" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#topnav" class="popup_close">X</a>
+            <div class="popup_title">Chcesz takej strony internetowej</div>
+            <div class="popup_text1"><span>NAPISZ:</span></div>
+            <div class="popup_text">saniden@gmail.com </div>
+            <div class="popup_text">@Alex_Gubich</div>
+            <div class="popup_text">@xobbyt</div>
 
-            </div>
         </div>
+    </div>
 </div>
 </body>
 </html>
+<style>
+.lampa{
+background: url("{%static 'images/block_1/lampa2.jpg'%}");
+height: 1000px;
+background-size: cover;
+color: #FFFFFF;
+text-align: centre;
+display: flex;
+}
+
+.uslugi{
+    background: url("{%static 'images//block_3/lampochka.jpg'%}");
+    background-size: cover;
+    margin-top: 20px;
+</style>

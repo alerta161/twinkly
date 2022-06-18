@@ -174,7 +174,11 @@
                 <input class="v1_96" placeholder="*E-mail">
                 <input class="v1_99" placeholder="*Telefon">
                 <div class="knopka2">
-                    <a href="#button" class="text_knopka">Wiślij</a>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <a href="#button" class="text_knopka">Wiślij</a>
+                    </form>
                 </div>
                 <div class="numbers">
                     <div class="box4_number1">
@@ -229,7 +233,7 @@
             <a href="#topnav" class="popup_close">X</a>
             <div class="popup_title">Chcesz takej strony internetowej</div>
             <div class="popup_text1"><span>NAPISZ:</span></div>
-            <div class="popup_text">saniden@gmail.com </div>
+            <div class="popup_text">saniden@gmail.com</div>
             <div class="popup_text">@Alex_Gubich</div>
             <div class="popup_text">@xobbyt</div>
 
@@ -252,4 +256,6 @@ display: flex;
     background: url("{%static 'images//block_3/lampochka.jpg'%}");
     background-size: cover;
     margin-top: 20px;
+
+
 </style>

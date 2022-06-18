@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 import dotenv
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,12 +34,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "your@gmail.com"
-EMAIL_HOST_PASSWORD = "password"
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+RECIPIENTS_EMAIL = ['sashaalerta@gmail.com']
+DEFAULT_FROM_EMAIL = 'sashaalerta@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Application definition
 
 INSTALLED_APPS = [

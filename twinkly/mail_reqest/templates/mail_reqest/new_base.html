@@ -21,7 +21,7 @@
         <a href="#kontakt">KONTAKT</a>
     </div>
     <div class="logo" id="home">
-        <div><img src="{%static 'images/block_1/22222.png'%}"></div>
+        <div><img src="{%static 'images/block_1/lampa2.jpg%}"></div>
     </div>
     <div class="lampa">
         <div class="v1_9">
@@ -166,52 +166,51 @@
             KONTAKT
         </h2>
         <div class="line"></div>
-        <div class="box_4">
-            <img src="{%static 'images/1 1011102.png'%}">
-            <div class="reg_form">
-                <input class="v1_90" placeholder="*Imię">
-                <input class="v1_93" placeholder="*Nazwisko">
-                <input class="v1_96" placeholder="*E-mail">
-                <input class="v1_99" placeholder="*Telefon">
-                <div class="knopka2">
-                    <form method="post">
-                        {% csrf_token %}
-                        {{ form.as_p }}
-                        <a href="#button" class="text_knopka">Wiślij</a>
-                    </form>
-                </div>
-                <div class="numbers">
-                    <div class="box4_number1">
-                        <span class="v1_108">+(48)722 768 569</span>
+        <form action="{% url 'home' %}" method="post">
+            <div class="box_4">
+                {% csrf_token %}
+                <img src="{%static 'images/block_5/logo2.jpg'%}">
+                <div class="reg_form">
+                    <input type="text" class="v1_90" name="user_name" placeholder="*Imię">
+                    <input type="text" class="v1_93" name="surname" placeholder="*Nazwisko">
+                    <input type="text" class="v1_96" name="mail" placeholder="*E-mail">
+                    <input type="text" class="v1_99" name="telefon" placeholder="*Telefon">
+                    <div class="knopka2">
+                        <button href="#button" class="text_knopka">Wiślij</button>
                     </div>
-                    <div class="box4_number2">
-                        <span class="v1_108">+(48)883 963 745</span>
+                    <div class="numbers">
+                        <div class="box4_number1">
+                            <span class="v1_108">+(48)722 768 569</span>
+                        </div>
+                        <div class="box4_number2">
+                            <span class="v1_108">+(48)883 963 745</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg_form2">
+                    <input type="text" class="v1_102" name="content" placeholder="Wiadomość">
+                    <div class="box4_fraza">
+                        <span class="v1_106">Twoje dane nie będą przekazywane osobom trzecim, 100% pewności. Zapewnia się poufność i ochronę danych osobowych zgodnie z ustawą FZ-52.</span>
+                    </div>
+                    <div class="dop_info">
+                        <div class="box4_email">
+                            <span class="v1_108">pankraatoov@gmail.com</span>
+                        </div>
+                        <div class="box4_lódź">
+                            <span class="v1_108">Łódź,Narutowicza 40, 90-135</span>
+                        </div>
+                        <div class="box4_nip">
+                            <span class="v1_108">NIP:7252318610</span>
+                        </div>
+                        <div class="box4_regon">
+                            <span class="v1_110">REGON:521786451</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="reg_form2">
-                <input class="v1_102" placeholder="Wiadomość">
-                <div class="box4_fraza">
-                    <span class="v1_106">Twoje dane nie będą przekazywane osobom trzecim, 100% pewności. Zapewnia się poufność i ochronę danych osobowych zgodnie z ustawą FZ-52.</span>
-                </div>
-                <div class="dop_info">
-                    <div class="box4_email">
-                        <span class="v1_108">pankraatoov@gmail.com</span>
-                    </div>
-                    <div class="box4_lódź">
-                        <span class="v1_108">Łódź,Narutowicza 40, 90-135</span>
-                    </div>
-                    <div class="box4_nip">
-                        <span class="v1_108">NIP:7252318610</span>
-                    </div>
-                    <div class="box4_regon">
-                        <span class="v1_110">REGON:521786451</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </form>
     </div>
+</div>
 </div>
 <a href="#popup2" class="saniden">SaniDen</a>
 <div id="popup" class="popup">
@@ -256,6 +255,15 @@ display: flex;
     background: url("{%static 'images//block_3/lampochka.jpg'%}");
     background-size: cover;
     margin-top: 20px;
+
+
+
+
+
+
+
+
+
 
 
 </style>

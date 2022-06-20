@@ -34,9 +34,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-RECIPIENTS_EMAIL = ['sashaalerta@gmail.com']
-DEFAULT_FROM_EMAIL = 'sashaalerta@gmail.com'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -138,3 +136,10 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "sashaalerta@gmail.com"
+EMAIL_HOST_PASSWORD = "anjoahbkbpajxybw"
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True

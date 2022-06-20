@@ -1,39 +1,26 @@
 from django.shortcuts import render
-
-from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render, redirect
-from .forms import ContactForm
-from twinkly.settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
+from django.core.mail import send_mail
 
 
-# Create your views here
 def index(request):
-    return render(request, 'mail_reqest/new_base.html')
+    if request.method == "POST":
+        user_name = request.POST['user_name']
+        surname = request.POST['surname']
+        mail = request.POST['mail']
+        telefon = request.POST['telefon']
+        content = request.POST['content']
 
+        send_mail(
+            f'{user_name}{surname}',
+            f'Телефон:{telefon}\n'
+            f'Почта:{mail}\n'
+            f'Сообщение:{content}',
+            'sashaalerta@gmail.com', #почта отправляющая
+            ["hubichaleksandr@gmail.com"] #почта принимающая
+        )
 
-def contact_view(request):
-    # если метод GET, вернем форму
-    if request.method == 'GET':
-        form = ContactForm()
-    elif request.method == 'POST':
-        # если метод POST, проверим форму и отправим письмо
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            imie = form.cleaned_data['imię']
-            surname = form.cleaned_data['Nazwisko']
-            mail = form.cleaned_data['E-mail']
-            telefon = form.cleaned_data['Telefon']
-            try:
-                send_mail(f'{imie}{surname} от {mail}', telefon, message,
-                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
-            except BadHeaderError:
-                return HttpResponse('Ошибка в теме письма.')
-            return redirect('success')
+        return render(request, 'mail_reqest/new_base.html',
+                      {'user_name': user_name, "surname": surname, "mail": mail, "telefon": telefon,
+                       "content": content})
     else:
-        return HttpResponse('Неверный запрос.')
-    return render(request, "new_base.html", {'form': form})
-
-
-def success_view(request):
-    return HttpResponse('Приняли! Спасибо за вашу заявку.')
+        return render(request, 'mail_reqest/new_base.html', {})

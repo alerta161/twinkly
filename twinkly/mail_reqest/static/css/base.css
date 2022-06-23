@@ -1,3 +1,4 @@
+
 {% load static %}
 .body{
     text-decoration: none;
@@ -10,17 +11,26 @@ a{
     color: white;
 }
 .lampa{
-background: url("{%static 'images/block_1/lampa2.jpg'%}");
-height: 1000px;
-background-size: cover;
-color: #FFFFFF;
-text-align: centre;
-display: flex;
+    background: url("{%static 'images/block_1/lampa2.jpg'%}");
+    height: 1000px;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: centre;
+    display: flex;
+}
+
+.fraza{
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    width: 6em;
+    font-size: 100px;
+    text-transform: uppercase;
 
 }
-.fraza{
-margin-top: 200px;
-    margin-bottom: 150px;
+.fraza2{
+    margin-top: 200px;
     margin-left: 300px;
     margin-right: auto;
     width: 6em;
@@ -28,10 +38,16 @@ margin-top: 200px;
     text-transform: uppercase;
 
 }
+.fraza3{
+    margin-left: 300px;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+}
 .logo{
     background-color: #333333;
     width: 180px;
-    height:1050px;
+    height:1060px;
     margin-right:0;
     position: absolute;
     top: 0;
@@ -40,7 +56,7 @@ margin-top: 200px;
 .topnav {
   overflow: hidden;
   box-shadow: 0.2px 5px rgba(158 158 158 / 10%);
-  height: 50px;
+  height: 60px;
   position:sticky;
   top:0;
   background-color: #1d1c1c;
@@ -52,13 +68,17 @@ margin-top: 200px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   margin-left: 100px;
+  transition-duration: 0.5s;
 }
 
 .topnav a:hover {
   background-color: #D1A954;
+  transform: translateY(20px);
+  font-size: 17px;
   color: black;
+  transition-duration: 0.5s;
 }
 
 .topnav a.active {
@@ -180,6 +200,12 @@ margin-top: 200px;
     box-sizing: border-box;
     border: 5px solid #FCF8F8;
     border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+.boxs:hover{
+      transform: translateY(20px);
+      transition-duration: 0.5s;
 }
 
 .box_headline{
@@ -208,7 +234,6 @@ margin-top: 200px;
     width: 77px;
 height: 75px;
 }
-
 .box_text{
         margin-top: 10px;
         font-family: 'Open Sans';
@@ -235,6 +260,11 @@ height: 75px;
     display: inline-table;
     box-sizing: border-box;
     border-radius: 8px;
+    transition-duration: 0.5s;
+}
+.boxs2:hover{
+      transform: translateY(20px);
+      transition-duration: 0.5s;
 }
 .boxs2_1{
     margin-top: 80px;
@@ -245,8 +275,12 @@ height: 75px;
     display: inline-table;
     box-sizing: border-box;
     border-radius: 8px;
+    transition-duration: 0.5s;
 }
-
+.boxs2_1:hover{
+      transform: translateY(20px);
+      transition-duration: 0.5s;
+}
 .box_text2{
         margin-top: 70px;
         font-family: 'Open Sans';
@@ -263,6 +297,8 @@ height: 75px;
         color: #fff;
 }
 
+
+
 .boxs3{
     margin: 92px 10px 10px 225px;
     display: flex;
@@ -271,6 +307,11 @@ height: 75px;
  width:200px;
  height:100px;
  margin-left:120px;
+ transition-duration: 0.5s;
+}
+.img_box3:hover{
+      transform: translateY(20px);
+      transition-duration: 0.5s;
 }
 
 .uslugi{
@@ -342,6 +383,35 @@ height: 75px;
     opacity:0.9;
 }
 
+.text_knopka2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+    color: #fff;
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    border: 2px solid #fff;
+    transition:0.5s;
+    overflow: hidden;
+    background-color: black;
+}
+.text_knopka2:hover{
+      transform: translateY(5px);
+      font-size:17px;
+      transition-duration: 0.5s;
+      background-color: #D1A954;
+      color:#fff;
+}
+
+
 .box4_fraza{
     width: 450px;
     color: #989898;
@@ -352,6 +422,7 @@ height: 75px;
 .numbers{
     margin-top: 60px;
 }
+
 
 .box4_number1{
     width: 131px;
@@ -387,7 +458,6 @@ height: 75px;
 
     color: #fff;
 }
-
 .box4_email{
     width: 255px;
     height: 15.62px;
@@ -542,3 +612,6 @@ color:#D1A954;
 color: #fff;
 font-weight: 700;}
 
+
+.foto{
+height:506px}

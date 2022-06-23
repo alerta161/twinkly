@@ -1,13 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
     <link href="{%static 'css/base.css'%}" rel="stylesheet">
     <link href="{%static 'images'%}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Twinkly</title>
 </head>
 <body id="no-scroll" class="body">
 <div class="conteiner">
@@ -21,16 +21,25 @@
         <a href="#kontakt">KONTAKT</a>
     </div>
     <div class="logo" id="home">
-        <div><img src="{%static 'images/block_1/lampa2.jpg%}"></div>
+        <a href="{% url 'home'%}">
+            <div><img src="{%static 'images/block_1/22222.png'%}"></div>
+        </a>
     </div>
     <div class="lampa">
         <div class="v1_9">
+            {% if user_name %}
+            <h1 class="fraza2">
+                Dziękujemy {{user_name}}!
+            </h1>
+            <h5 class="fraza3">Wiadomość została wysłana!</h5>
+            {% else %}
             <h1 class="fraza">
                 stworzamy świat jasniejszym
             </h1>
             <div class="knopka">
                 <a href="#popup" class="text_knopka">kontakt</a>
             </div>
+            {% endif %}
         </div>
     </div>
     <div class="line2" id="about_firme"></div>
@@ -169,14 +178,14 @@
         <form action="{% url 'home' %}" method="post">
             <div class="box_4">
                 {% csrf_token %}
-                <img src="{%static 'images/block_5/logo2.jpg'%}">
+                <a href="#home"><img class="foto" src="{%static 'images/block_5/logo2.jpg'%}"></a>
                 <div class="reg_form">
                     <input type="text" class="v1_90" name="user_name" placeholder="*Imię">
                     <input type="text" class="v1_93" name="surname" placeholder="*Nazwisko">
                     <input type="text" class="v1_96" name="mail" placeholder="*E-mail">
                     <input type="text" class="v1_99" name="telefon" placeholder="*Telefon">
                     <div class="knopka2">
-                        <button href="#button" class="text_knopka">Wiślij</button>
+                        <button href="#button" class="text_knopka2">Wiślij</button>
                     </div>
                     <div class="numbers">
                         <div class="box4_number1">
@@ -207,8 +216,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+    </form>
     </div>
 </div>
 </div>
@@ -243,27 +251,17 @@
 </html>
 <style>
 .lampa{
-background: url("{%static 'images/block_1/lampa2.jpg'%}");
-height: 1000px;
-background-size: cover;
-color: #FFFFFF;
-text-align: centre;
-display: flex;
+    background: url("{%static 'images/block_1/lampa2.jpg'%}");
+    height: 1000px;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: centre;
+    display: flex;
 }
 
 .uslugi{
     background: url("{%static 'images//block_3/lampochka.jpg'%}");
     background-size: cover;
     margin-top: 20px;
-
-
-
-
-
-
-
-
-
-
 
 </style>

@@ -53,6 +53,13 @@ a{
     top: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.image22{
+margin-top:20px;
+margin-left:20px;
+position:absolute;
+
+}
 .topnav {
   overflow: hidden;
   box-shadow: 0.2px 5px rgba(158 158 158 / 10%);
@@ -296,7 +303,10 @@ height: 75px;
 
         color: #fff;
 }
-
+.img_box4{
+margin-top:20px;
+margin-left:20px;
+}
 
 
 .boxs3{
@@ -304,10 +314,11 @@ height: 75px;
     display: flex;
 }
 .img_box3{
- width:200px;
- height:100px;
- margin-left:120px;
- transition-duration: 0.5s;
+     width:200px;
+     height:60px;
+     transition-duration: 0.5s;
+     padding-left: 50px;
+     margin-left:10px;
 }
 .img_box3:hover{
       transform: translateY(20px);
@@ -370,7 +381,7 @@ height: 75px;
     }
 .v1_102{
     font-size: 16px;
-    width: 100%;
+    width: 90%;
     height: 132px;
     border: 1px solid var(--gray);
     border-radius: 2px;
@@ -413,7 +424,7 @@ height: 75px;
 
 
 .box4_fraza{
-    width: 450px;
+    width: 400px;
     color: #989898;
 
 
@@ -463,7 +474,7 @@ height: 75px;
     height: 15.62px;
     margin-top: 44px;
     margin-bottom:6px;
-    margin-left: 190px;
+    margin-left: 147px;
 
 
     font-family: 'Open Sans Condensed';
@@ -483,7 +494,7 @@ height: 75px;
 .box4_lódź{
     width: 275px;
     height: 15.62px;
-    margin-left: 184px;
+    margin-left: 140px;
     margin-bottom:6px;
 
     font-family: 'Open Sans Condensed';
@@ -503,7 +514,7 @@ height: 75px;
 .box4_nip{
     width: 255px;
     height: 15.62px;
-    margin-left: 59px;
+    margin-left: 16px;
     margin-bottom:6px;
 
     font-family: 'Open Sans Condensed';
@@ -523,7 +534,7 @@ height: 75px;
 .box4_regon{
     width: 255px;
     height: 15.62px;
-    margin-left: 83px;
+    margin-left: 40px;
     margin-bottom:6px;
 
     font-family: 'Open Sans Condensed';

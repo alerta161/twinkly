@@ -1,2 +1,2 @@
 # twinkly
-#a website for a company made on jango with a feedback form 
+a website for a company made on Django with a feedback form 

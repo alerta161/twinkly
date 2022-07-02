@@ -1,4 +1,3 @@
-
 {% load static %}
 .body{
     text-decoration: none;
@@ -52,13 +51,6 @@ a{
     position: absolute;
     top: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.image22{
-margin-top:20px;
-margin-left:20px;
-position:absolute;
-
 }
 .topnav {
   overflow: hidden;
@@ -273,6 +265,9 @@ height: 75px;
       transform: translateY(20px);
       transition-duration: 0.5s;
 }
+
+.foto{
+height:508px;}
 .boxs2_1{
     margin-top: 80px;
     margin-bottom: 0;
@@ -303,10 +298,7 @@ height: 75px;
 
         color: #fff;
 }
-.img_box4{
-margin-top:20px;
-margin-left:20px;
-}
+
 
 
 .boxs3{
@@ -314,11 +306,10 @@ margin-left:20px;
     display: flex;
 }
 .img_box3{
-     width:200px;
-     height:60px;
-     transition-duration: 0.5s;
-     padding-left: 50px;
-     margin-left:10px;
+ width:200px;
+ height:100px;
+ margin-left:40px;
+ transition-duration: 0.5s;
 }
 .img_box3:hover{
       transform: translateY(20px);
@@ -338,13 +329,15 @@ margin-left:20px;
     display:flex;
 }
 .reg_form{
-    width: 440px;
+    width: 455px;
     height:150px;
     margin-top: 50px;
-    margin-left: 150px
+    margin-left: 150px;
+
 }
 .reg_form2{
     height:150px;
+    padding-left: 15px;
 }
 .v1_90{
     font-size: 16px;
@@ -353,6 +346,7 @@ margin-left:20px;
     padding: 16px;
     background: #444444;
     margin-bottom:20px;
+    margin-right:14px;
     }
 .v1_93{
     font-size: 16px;
@@ -369,6 +363,7 @@ margin-left:20px;
     padding: 16px;
     background: #444444;
     margin-bottom:20px;
+    margin-right:14px;
     }
 .v1_99{
     font-size: 16px;
@@ -381,7 +376,7 @@ margin-left:20px;
     }
 .v1_102{
     font-size: 16px;
-    width: 90%;
+    width: 100%;
     height: 132px;
     border: 1px solid var(--gray);
     border-radius: 2px;
@@ -424,7 +419,7 @@ margin-left:20px;
 
 
 .box4_fraza{
-    width: 400px;
+    width: 420px;
     color: #989898;
 
 
@@ -469,12 +464,13 @@ margin-left:20px;
 
     color: #fff;
 }
+
 .box4_email{
     width: 255px;
     height: 15.62px;
     margin-top: 44px;
     margin-bottom:6px;
-    margin-left: 147px;
+    margin-left: 150px;
 
 
     font-family: 'Open Sans Condensed';
@@ -494,7 +490,7 @@ margin-left:20px;
 .box4_lódź{
     width: 275px;
     height: 15.62px;
-    margin-left: 140px;
+    margin-left: 143px;
     margin-bottom:6px;
 
     font-family: 'Open Sans Condensed';
@@ -514,7 +510,7 @@ margin-left:20px;
 .box4_nip{
     width: 255px;
     height: 15.62px;
-    margin-left: 16px;
+    margin-left: 19px;
     margin-bottom:6px;
 
     font-family: 'Open Sans Condensed';
@@ -534,7 +530,7 @@ margin-left:20px;
 .box4_regon{
     width: 255px;
     height: 15.62px;
-    margin-left: 40px;
+    margin-left: 42px;
     margin-bottom:6px;
 
     font-family: 'Open Sans Condensed';
@@ -620,9 +616,6 @@ color: #fff;
 color:#D1A954;
 }
 .popup_text1{
-color: #fff;
-font-weight: 700;}
-
-
-.foto{
-height:506px}
+    color: #fff;
+    font-weight: 700;
+}

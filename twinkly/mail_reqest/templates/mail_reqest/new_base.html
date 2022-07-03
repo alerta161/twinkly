@@ -10,44 +10,60 @@
     <title>Twinkly</title>
 </head>
 <body id="no-scroll" class="body">
-<div class="conteiner">
-    <div class="topnav">
-        <a class="active" href="#home">GŁÓWNA</a>
-        <a href="#about_firme">O FIRME</a>
-        <a href="#dlaczego_my?">DLACZEGO MY?
-        </a>
-        <a href="#naszi_uslugi">NASZI USLUGI</a>
-        <a href="#klienci">KLIENCI</a>
-        <a href="#kontakt">KONTAKT</a>
+<header class="header">
+    <div class="conteiner">
+        <nav class="topnav">
+            <ul class="topnav_list">
+                <li>
+                    <a class="topnav_link" href="#home">GŁÓWNA</a>
+                </li>
+                <li>
+                    <a class="topnav_link" href="#about_firme">O FIRME</a>
+                </li>
+                <li>
+                    <a class="topnav_link" href="#dlaczego_my?">DLACZEGO MY?</a>
+                </li>
+                <li>
+                    <a class="topnav_link" href="#naszi_uslugi">NASZI USLUGI</a>
+                </li>
+                <li>
+                    <a class="topnav_link" href="#klienci">KLIENCI</a>
+                </li>
+                <li>
+                    <a class="topnav_link" href="#kontakt">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="logo" id="home">
-        <a href="{% url 'home'%}">
-            <div><img src="{%static 'images/block_1/twinkly1.png'%}"></div>
-        </a>
-    </div>
-    <div class="lampa">
-        <div class="v1_9">
-            {% if user_name %}
-            <h1 class="fraza2">
-                Dziękujemy {{user_name}}!
-            </h1>
-            <h5 class="fraza3">Wiadomość została wysłana!</h5>
-            {% else %}
-            <h1 class="fraza">
-                stwarzamy świat jaśniejszym
-            </h1>
-            <div class="knopka">
-                <a href="#popup" class="text_knopka">kontakt</a>
-            </div>
-            {% endif %}
+</header>
+<div class="logo" id="home">
+    <a href="{% url 'home'%}">
+        <div><img src="{%static 'images/block_1/twinkly1.png'%}"></div>
+    </a>
+</div>
+<div class="lampa">
+    <div class="v1_9">
+        {% if user_name %}
+        <h1 class="fraza2">
+            Dziękujemy {{user_name}}!
+        </h1>
+        <h5 class="fraza3">Wiadomość została wysłana!</h5>
+        {% else %}
+        <h1 class="fraza">
+            stwarzamy świat jaśniejszym
+        </h1>
+        <div class="knopka">
+            <a href="#popup" class="text_knopka">kontakt</a>
         </div>
+        {% endif %}
     </div>
-    <div class="line2" id="about_firme"></div>
-    <div class="midle">
-        <div class="v1_74">
-            <h2 class="o_firme">о firme</h2>
-            <div class="line" id="line2"></div>
-            <div class="v1_76">
+</div>
+<div class="line2" id="about_firme"></div>
+<div class="midle">
+    <div class="v1_74">
+        <h2 class="o_firme">о firme</h2>
+        <div class="line" id="line2"></div>
+        <div class="v1_76">
                         <span class="v1_77">
                   Jesteśmy firmą z nowym podejściem do klienta. Praktyczność i jakość wykonania jest najważniejszym atrybutem.
 Klient może kontrolować każdy etap montażu online oraz wnosić zmiany 24/7. OFERUJEMY:
@@ -60,162 +76,162 @@ Klient może kontrolować każdy etap montażu online oraz wnosić zmiany 24/7. 
 <br>DARMOWA WYCENA.
 <br>WYSTAWIAMY FAKTURĘ VAT
                     </span>
-            </div>
         </div>
     </div>
-    <div class="line2" id="dlaczego_my?"></div>
-    <div class="block">
-        <h2 class="o_firme">
-            Dlaczego my?
-        </h2>
-        <div class="line"></div>
-        <aside>
-            <div class="boxs">
-                <img class="img_box" src="{%static 'images/block_2/el.png'%}">
-                <div class="box_for_text">
-                    <h6 class="box_headline">Doświadczeni elektrycy</h6>
-                    <p class="box_text">zatrudniamy tylko profesjonalnych pracowników</p>
-                </div>
+</div>
+<div class="line2" id="dlaczego_my?"></div>
+<div class="block">
+    <h2 class="o_firme">
+        Dlaczego my?
+    </h2>
+    <div class="line"></div>
+    <aside>
+        <div class="boxs">
+            <img class="img_box" src="{%static 'images/block_2/el.png'%}">
+            <div class="box_for_text">
+                <h6 class="box_headline">Doświadczeni elektrycy</h6>
+                <p class="box_text">zatrudniamy tylko profesjonalnych pracowników</p>
             </div>
-            <div class="boxs">
-                <img class="img_box" src="{%static 'images/block_2/order.png'%}">
-                <div class="box_for_text">
-                    <h6 class="box_headline">Łatwe zamawianie</h6>
-                    <p class="box_text">Usługę elektryka można zamówić w domu, korzystając z numerów telefonów i
-                        formularza
-                        na stronie
-                        internetowej.</p>
-                </div>
-            </div>
-            <div class="boxs">
-                <img class="img_box" src="{%static 'images/block_2/price.png'%}">
-                <div class="box_for_text">
-                    <h6 class="box_headline">Elastyczne ceny</h6>
-                    <p class="box_text">Cena zawsze podlega negocjacji, zawsze będziemy słuchać klienta i postaramy się
-                        zrobić wszystko w możliwościach cenowych klienta.</p>
-                </div>
-            </div>
-            <div class="boxs">
-                <img class="img_box" src="{%static 'images/block_2/tools.png'%}">
-                <div class="box_for_text">
-                    <h6 class="box_headline">Profesjonalne narzędzie</h6>
-                    <p class="box_text">Używamy profesjonalnego sprzętu i narzędzi, takich jak Bosch, Makita i Hilti.
-                        Nie
-                        oszczędzamy na
-                        materiałach eksploatacyjnych. Praca bez pyłu i gruzu.</p>
-                </div>
-            </div>
-            <div class="boxs">
-                <img class="img_box" src="{%static 'images/block_2/monitor.png'%}">
-                <div class="box_for_text">
-                    <h6 class="box_headline">monitorowanie online</h6>
-                    <p class="box_text">Z nami sprawdzisz online każdy krok instalacji</p>
-                </div>
-            </div>
-        </aside>
-    </div>
-    <div class="line2" id="naszi_uslugi"></div>
-    <div>
-        <h2 class="o_firme">
-            nasze usługi
-        </h2>
-        <div class="line"></div>
-        <aside class="uslugi">
-            <div class="boxs2">
-                <img class="img_box" src="{%static 'images/block_3/elekt.png'%}">
-                <div class="box_for_text">
-                    <p class="box_text2">instalacja elektryczna.</p>
-                </div>
-            </div>
-            <div class="boxs2_1">
-                <img class="img_box" src="{%static 'images/block_3/ethernet.png'%}">
-                <div class="box_for_text">
-                    <p class="box_text2">systemy niskoprądowe.</p>
-                </div>
-            </div>
-            <div class="boxs2">
-                <img class="img_box" src="{%static 'images/block_3/kabel.png'%}">
-                <div class="box_for_text">
-                    <p class="box_text2">układanie tras i koryt kablowych</p>
-                </div>
-            </div>
-            <div class="boxs2_1">
-                <img class="img_box" src="{%static 'images/block_3/light.png'%}">
-                <div class="box_for_text">
-                    <p class="box_text2">oświetlenie różnych typów</p>
-                </div>
-            </div>
-            <div class="boxs2">
-                <img class="img_box" src="{%static 'images/block_3/repair.png'%}">
-                <div class="box_for_text">
-                    <p class="box_text2">wymiana starych instalacji elektrycznych</p>
-                </div>
-            </div>
-            <div class="boxs2_1">
-                <img class="img_box" src="{%static 'images/block_3/protect.png'%}">
-                <div class="box_for_text">
-                    <p class="box_text2">systemy przeciwpożarowe</p>
-                </div>
-            </div>
-        </aside>
-    </div>
-    <div class="line2" id="klienci"></div>
-    <div>
-        <h2 class="o_firme">
-            KLIENCI
-        </h2>
-        <div class="line"></div>
-        <div class="boxs3">
-            <img class="img_box3" src="{%static 'images/block_4/eltech.png'%}">
-            <img class="img_box3" src="{%static 'images/block_4/aper.png'%}">
-            <img class="img_box3" src="{%static 'images/block_4/eltron.png'%}">
         </div>
-        <div class="line2" id="kontakt"></div>
-        <div></div>
-        <h2 class="o_firme">
-            KONTAKT
-        </h2>
-        <div class="line"></div>
-        <form action="{% url 'home' %}" method="post">
-            <div class="box_4">
-                {% csrf_token %}
-                <a href="#home"><img class="foto" src="{%static 'images/block_5/logo2.jpg'%}"></a>
-                <div class="reg_form">
-                    <input type="text" class="v1_90" name="user_name" placeholder="*Imię">
-                    <input type="text" class="v1_93" name="surname" placeholder="*Nazwisko">
-                    <input type="text" class="v1_96" name="mail" placeholder="*E-mail">
-                    <input type="text" class="v1_99" name="telefon" placeholder="*Telefon">
-                    <div class="knopka2">
-                        <button href="#button" class="text_knopka2">Wiślij</button>
-                    </div>
-                    <div class="numbers">
-                        <div class="box4_number1">
-                            <span class="v1_108">+(48)722 768 569</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reg_form2">
-                    <input type="text" class="v1_102" name="content" placeholder="Wiadomość">
-                    <div class="box4_fraza">
-                        <span class="v1_106">*Wyrażam zgodę na przetwarzanie moich danych osobowych.</span>
-                    </div>
-                    <div class="dop_info">
-                        <div class="box4_email">
-                            <span class="v1_108">pankraatoov@gmail.com</span>
-                        </div>
-                        <div class="box4_lódź">
-                            <span class="v1_108">Łódź,Narutowicza 40, 90-135</span>
-                        </div>
-                        <div class="box4_nip">
-                            <span class="v1_108">NIP:7252318610</span>
-                        </div>
-                        <div class="box4_regon">
-                            <span class="v1_110">REGON:521786451</span>
-                        </div>
-                    </div>
-                </div>
-        </form>
+        <div class="boxs">
+            <img class="img_box" src="{%static 'images/block_2/order.png'%}">
+            <div class="box_for_text">
+                <h6 class="box_headline">Łatwe zamawianie</h6>
+                <p class="box_text">Usługę elektryka można zamówić w domu, korzystając z numerów telefonów i
+                    formularza
+                    na stronie
+                    internetowej.</p>
+            </div>
+        </div>
+        <div class="boxs">
+            <img class="img_box" src="{%static 'images/block_2/price.png'%}">
+            <div class="box_for_text">
+                <h6 class="box_headline">Elastyczne ceny</h6>
+                <p class="box_text">Cena zawsze podlega negocjacji, zawsze będziemy słuchać klienta i postaramy się
+                    zrobić wszystko w możliwościach cenowych klienta.</p>
+            </div>
+        </div>
+        <div class="boxs">
+            <img class="img_box" src="{%static 'images/block_2/tools.png'%}">
+            <div class="box_for_text">
+                <h6 class="box_headline">Profesjonalne narzędzie</h6>
+                <p class="box_text">Używamy profesjonalnego sprzętu i narzędzi, takich jak Bosch, Makita i Hilti.
+                    Nie
+                    oszczędzamy na
+                    materiałach eksploatacyjnych. Praca bez pyłu i gruzu.</p>
+            </div>
+        </div>
+        <div class="boxs">
+            <img class="img_box" src="{%static 'images/block_2/monitor.png'%}">
+            <div class="box_for_text">
+                <h6 class="box_headline">monitorowanie online</h6>
+                <p class="box_text">Z nami sprawdzisz online każdy krok instalacji</p>
+            </div>
+        </div>
+    </aside>
+</div>
+<div class="line2" id="naszi_uslugi"></div>
+<div>
+    <h2 class="o_firme">
+        nasze usługi
+    </h2>
+    <div class="line"></div>
+    <aside class="uslugi">
+        <div class="boxs2">
+            <img class="img_box" src="{%static 'images/block_3/elekt.png'%}">
+            <div class="box_for_text">
+                <p class="box_text2">instalacja elektryczna.</p>
+            </div>
+        </div>
+        <div class="boxs2_1">
+            <img class="img_box" src="{%static 'images/block_3/ethernet.png'%}">
+            <div class="box_for_text">
+                <p class="box_text2">systemy niskoprądowe.</p>
+            </div>
+        </div>
+        <div class="boxs2">
+            <img class="img_box" src="{%static 'images/block_3/kabel.png'%}">
+            <div class="box_for_text">
+                <p class="box_text2">układanie tras i koryt kablowych</p>
+            </div>
+        </div>
+        <div class="boxs2_1">
+            <img class="img_box" src="{%static 'images/block_3/light.png'%}">
+            <div class="box_for_text">
+                <p class="box_text2">oświetlenie różnych typów</p>
+            </div>
+        </div>
+        <div class="boxs2">
+            <img class="img_box" src="{%static 'images/block_3/repair.png'%}">
+            <div class="box_for_text">
+                <p class="box_text2">wymiana starych instalacji elektrycznych</p>
+            </div>
+        </div>
+        <div class="boxs2_1">
+            <img class="img_box" src="{%static 'images/block_3/protect.png'%}">
+            <div class="box_for_text">
+                <p class="box_text2">systemy przeciwpożarowe</p>
+            </div>
+        </div>
+    </aside>
+</div>
+<div class="line2" id="klienci"></div>
+<div>
+    <h2 class="o_firme">
+        KLIENCI
+    </h2>
+    <div class="line"></div>
+    <div class="boxs3">
+        <img class="img_box3" src="{%static 'images/block_4/eltech.png'%}">
+        <img class="img_box3" src="{%static 'images/block_4/aper.png'%}">
+        <img class="img_box3" src="{%static 'images/block_4/eltron.png'%}">
     </div>
+    <div class="line2" id="kontakt"></div>
+    <div></div>
+    <h2 class="o_firme">
+        KONTAKT
+    </h2>
+    <div class="line"></div>
+    <form action="{% url 'home' %}" method="post">
+        <div class="box_4">
+            {% csrf_token %}
+            <a href="#home"><img class="foto" src="{%static 'images/block_5/logo2.jpg'%}"></a>
+            <div class="reg_form">
+                <input type="text" class="v1_90" name="user_name" placeholder="*Imię">
+                <input type="text" class="v1_93" name="surname" placeholder="*Nazwisko">
+                <input type="text" class="v1_96" name="mail" placeholder="*E-mail">
+                <input type="text" class="v1_99" name="telefon" placeholder="*Telefon">
+                <div class="knopka2">
+                    <button href="#button" class="text_knopka2">Wiślij</button>
+                </div>
+                <div class="numbers">
+                    <div class="box4_number1">
+                        <span class="v1_108">+(48)722 768 569</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reg_form2">
+                <input type="text" class="v1_102" name="content" placeholder="Wiadomość">
+                <div class="box4_fraza">
+                    <span class="v1_106">*Wyrażam zgodę na przetwarzanie moich danych osobowych.</span>
+                </div>
+                <div class="dop_info">
+                    <div class="box4_email">
+                        <span class="v1_108">pankraatoov@gmail.com</span>
+                    </div>
+                    <div class="box4_lódź">
+                        <span class="v1_108">Łódź,Narutowicza 40, 90-135</span>
+                    </div>
+                    <div class="box4_nip">
+                        <span class="v1_108">NIP:7252318610</span>
+                    </div>
+                    <div class="box4_regon">
+                        <span class="v1_110">REGON:521786451</span>
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
 </div>
 </div>
 <a href="#popup2" class="saniden">by SaniDen</a>
@@ -260,6 +276,7 @@ Klient może kontrolować każdy etap montażu online oraz wnosić zmiany 24/7. 
     background: url("{%static 'images//block_3/lampochka.jpg'%}");
     background-size: cover;
     margin-top: 20px;
+
 
 
 

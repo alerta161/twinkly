@@ -1,1 +1,1 @@
-web: gunicorn twinkly.wsgi --log-file -
+web: gunicorn pythonProject.wsgi --log-file -

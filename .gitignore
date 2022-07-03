@@ -1,6 +1,5 @@
 _pycache_/
 *.pyc
-.env
 .idea/
 venv/
 db.sqlite3
